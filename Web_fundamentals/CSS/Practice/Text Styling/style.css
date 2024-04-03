@@ -1,0 +1,23 @@
+h1{
+    
+    color:white;
+    background-color: black;
+}
+
+span{
+    color:aqua;
+}
+
+h2{
+    color: white;
+    background-color: blueviolet;
+    text-align: center;
+    font-style: italic;
+}
+
+h3{
+    color:rgb(255,255,255);
+    background-color:#9FC5F8;
+    text-align:right;
+    text-decoration: underline;
+}
