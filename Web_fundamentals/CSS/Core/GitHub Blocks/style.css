@@ -1,0 +1,31 @@
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+ 
+ 
+ }
+ 
+ img.octocat {
+    height: 200px;
+ }
+ 
+ .row{
+     display: flex;
+     background-color: #fff;
+     margin: 20px;
+     padding: 20px;
+     justify-content: space-between;
+ }
+ 
+ .pink{
+     background-color: pink;
+     justify-content: space-evenly;
+ }
+ .blue{
+     background-color: skyblue;
+ }
+ 
