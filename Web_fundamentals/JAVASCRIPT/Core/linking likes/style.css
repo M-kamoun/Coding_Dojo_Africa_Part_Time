@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post {
+    width: 500px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    font-size: 1.2rem;
+
+}
+
+.top {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.like-btn {
+    background-color: yellow;
+    padding: 5px 15px;
+    border: 2px solid black;
+    box-shadow: 3px 3px #000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background: #0c0b0b;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.row {
+    display: flex;
+
+
+}
+
+.left {
+
+    flex: 1;
+
+}
+
+.right {
+
+    margin-left: 30px;
+    flex: 2;
+
+
+}
+
+.user {
+    border: 2px solid black;
+    padding: 20px;
+
+    text-align: center;
+}
+
+.user-img {
+
+    height: 128px;
+    margin: 20px;
+}
+
+.left p {
+    margin: 20px;
+}
+
+.post-2 {
+
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+
+}
