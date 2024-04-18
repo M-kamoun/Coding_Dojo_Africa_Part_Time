@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.top {
+    background-color: #9FC5F8;
+    color: #fff;
+}
+
+.nav,.container{
+    width: 1000px;
+    margin: 0 auto;
+    }
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.nav ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.nav h1 {
+    font-size: 2.5rem;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.section-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #999;
+}
+
+.section-1 h2{
+    font-size: 1.8rem;
+}
+
+.section-1 label, .section-1 select{
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.section-1 select{
+    width: 60px;
+}
+.section-2{
+    display: flex;
+
+    
+}
+
+.row{
+    text-align: center;
+    flex: 1;
+    background-color: #ddd;
+    padding: 40px 0;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    
+}
+
+.row:last-child{
+    margin-right: 0;
+}
+
+.row img{
+    border-radius: 50%;
+    width: 150px;
+    margin:40px 0;
+}
+.temperatures {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.high, .low {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.high {
+    color: red;
+}
+
+.low {
+    color: blue;
+}
+
+.row p{
+    font-size: 1.2rem;
+}
+
+.footer {
+    width: 100%;
+  
+    bottom: 10px;
+}
+.cookie{
+    
+    width: 1000px;
+    height: 160px;
+    padding: 20px;
+    border: 2px solid #999;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #000;
+    background-color: #9fc5f8;
+    cursor: pointer;
+}
+
+.text {
+    width: 70%;
+}
+
+.text h2 {
+    font-size: 1.8rem;
+}
+
+.text p {
+    font-size: 1.2rem;
+}
