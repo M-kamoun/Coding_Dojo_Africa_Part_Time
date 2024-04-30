@@ -11,3 +11,5 @@ function message() {
 function hide(elem) {
   elem.remove();
 }
+
+
