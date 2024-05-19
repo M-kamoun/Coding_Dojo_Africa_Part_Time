@@ -52,5 +52,3 @@ user_2.display_info()
 user_2.spend_point(80)
 user_2.display_info()
 user_3.spend_point(40)
-
-
