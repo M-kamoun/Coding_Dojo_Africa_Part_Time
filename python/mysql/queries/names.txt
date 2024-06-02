@@ -1,0 +1,19 @@
+use names;
+select * from names;
+
+insert into names (name)
+values ('Mehdi Kamoun');
+
+
+insert into names (name)
+values("Mohamed ben Massaoud"),("Mouna Belkhir"),("Mohamed Aziz Kamoun");
+
+select * from names;
+
+update names
+set name="Kammoun Mahdi"
+where id=1;
+
+delete from names where id=1;
+
+select * from names;
