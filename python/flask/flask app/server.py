@@ -1,5 +1,5 @@
 # import flask to allow us to create our app.
-from flask import Flask  
+from flask import Flask,render_template  
 # Create a new instance of the Flask class called "app"
 app = Flask(__name__)
 #define a route()
@@ -11,9 +11,9 @@ def error(e):
 
 
 
-@app.route('/')
-def hello_world():
-    return "Hello World!"
+@app.route('/<string:name>/<int:num>')
+def hello_world(name,num):
+    return render_template("index.html",my_name=name,repeat_num=num)
 
 @app.route('/dojo')
 def dojo():

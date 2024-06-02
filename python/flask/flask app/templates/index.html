@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Flask</title>
+</head>
+
+<body>
+    <h1>hello Flask from HTML template</h1>
+
+    <h2>Name : {{my_name}}</h2>
+    <h2>Repeat Number : {{repeat_num}}</h2>
+
+    <h3>Result : </h3>
+
+    {% if my_name=="hello" :%}
+    <p>You say : {{my_name.capitalize()}}</p>
+    {% else: %}
+    {% for i in range(0,repeat_num): %}
+    <p>My Name : {{my_name.capitalize()}}</p>
+    {%endfor %}
+    {%endif %}
+
+
+
+
+</body>
+
+</html>
