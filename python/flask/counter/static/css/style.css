@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    margin: 50px auto;
+    width: 500px;
+    text-align: center;
+}
+
+
+#screen {
+    font-size: 150px;
+    border: 1px solid #000;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.btn {
+    padding: 20px;
+    font-size: 2rem;
+    width: 100%;
+    margin: 10px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
