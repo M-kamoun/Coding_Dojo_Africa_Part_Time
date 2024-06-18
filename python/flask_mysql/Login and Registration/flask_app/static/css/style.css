@@ -1,0 +1,8 @@
+.wrapper {
+    border-top: 3px solid green;
+}
+
+.custom-width {
+    max-width: 400px;
+
+}
