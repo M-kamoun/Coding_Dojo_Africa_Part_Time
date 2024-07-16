@@ -35,7 +35,7 @@ function App() {
       {personArr.map((person) => {
         return (
           <PersonCard
-            firstName={person.lastName}
+            firstName={person.firstName}
             lastName={person.lastName}
             age={person.age}
             hairColor={person.hairColor}
