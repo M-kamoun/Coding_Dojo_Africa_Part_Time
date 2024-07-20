@@ -1,0 +1,38 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Verdana;
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.formControl {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.formControl label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formControl input {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    width: 95%;
+}
+
+
+.display {
+    text-align: left;
+    max-width: 500px;
+    margin: 10px auto;
+}
