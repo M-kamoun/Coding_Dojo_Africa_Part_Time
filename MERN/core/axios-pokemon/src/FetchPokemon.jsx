@@ -1,4 +1,4 @@
-import axios from "axios"
+
 import { useState } from "react"
 
 const Pokemon = () => {
@@ -9,10 +9,11 @@ const Pokemon = () => {
 
     const fetchPokemon = ()=>{
         setLoading(true)
-        axios.get("https://pokeapi.co/api/v2/pokemon?limit=807")
-        .then(res=>{ 
-            console.log(res.data)
-            setPokemon(res.data)
+        fetch("https://pokeapi.co/api/v2/pokemon?limit=807")
+        .then(response=>response.json())
+        .then(data=>{ 
+            console.log(data)
+            setPokemon(data)
             setLoading(false)
     })
            
@@ -26,7 +27,7 @@ const Pokemon = () => {
       }
   return (
     <div>
-        <button onClick={fetchPokemon}>Fetch Pokemon with AXIOS</button>
+        <button onClick={fetchPokemon}>Fetch Pokemon WITH FETCH</button>
 
         {loading?<h1>Loading</h1>:""}
        

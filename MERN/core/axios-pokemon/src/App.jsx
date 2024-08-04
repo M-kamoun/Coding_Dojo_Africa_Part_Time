@@ -2,6 +2,7 @@
 
 import './App.css'
 import Pokemon from './Pokemon'
+import FetchPokemon from './FetchPokemon'
 
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
 
 
   return (
-    <div>
+    <div> 
+<FetchPokemon/>
+
 <Pokemon/>
     </div>
   )
