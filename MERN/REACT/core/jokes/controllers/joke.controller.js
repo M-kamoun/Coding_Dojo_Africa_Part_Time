@@ -1,3 +1,4 @@
+const mongoose = require("mongoose");
 const Joke = require("../models/joke.model");
 
 module.exports.findAllJoke = async (req, res) => {
@@ -45,5 +46,18 @@ module.exports.deleteJoke = async (req, res) => {
     res.status(200).json({ message: "Joke Deleted Successfuly!", joke: joke });
   } catch (error) {
     res.status(500).json({ message: error.message });
+  }
+};
+
+module.exports.randomJoke = async (req, res) => {
+  try {
+    const jokeIds = await Joke.find().distinct("_id");
+
+    const randomIndex = Math.floor(Math.random() * jokeIds.length);
+
+    const randomJoke = await Joke.findById(jokeIds[randomIndex]);
+    res.status(200).json({ message: "Random Joke", joke: randomJoke });
+  } catch (error) {
+    console.log(error);
   }
 };
