@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios';
+import ListProduct from './ListProduct';
 
 const CreateProduct = () => {
 
@@ -17,7 +18,7 @@ const CreateProduct = () => {
         e.preventDefault()
        
       
-            axios.post("http://localhost:8000/api/products",formdata)
+            axios.post("http://localhost:8000/products",formdata)
             .then(res=>console.log(res.data))
             .catch(err=>console.log(err))
     
@@ -26,9 +27,10 @@ const CreateProduct = () => {
 
 
   return (
-    <div className='bg-slate-300 flex justify-center place-items-start  h-screen'>
-    <div className='bg-white p-5 rounded-lg shadow-md w-96 mt-20'>
-        {JSON.stringify(formdata)}
+    <div className='container mx-auto p-4 '>
+        <div className=' flex justify-center place-items-start mt-5'>
+    <div className='bg-white p-5 rounded-lg shadow-md w-96'>
+        
         <h1 className='text-3xl font-semibold text-center mb-4'>Product Manager</h1>
     <form onSubmit={handleSubmit}>
         <div className='mb-4'>
@@ -64,6 +66,12 @@ const CreateProduct = () => {
     </div>
     
    </div>
+   <div>
+    <ListProduct/>
+   </div>
+    
+    </div>
+    
   )
 }
 

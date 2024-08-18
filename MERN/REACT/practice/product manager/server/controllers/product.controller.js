@@ -2,11 +2,7 @@
 
 const Product = require('../models/product.model')
 
-module.exports.index = (req, res) => {
-    res.json({
-       message: "Hello World"
-    });
-}
+
 
 //! Read all products
 module.exports.getAllProducts = (req, res) => {
@@ -15,13 +11,35 @@ module.exports.getAllProducts = (req, res) => {
         success: true,
         message: "❎❎❎ Products fetched successfully ❎❎❎",
         count: products.length,
-        data: products}))
+        results: products}))
        .catch(err => res.status(400).json({
         success: false,
         message : "❌❌❌Error fetching products❌❌❌"
     }));
 }
 
+
+//!read one product
+
+module.exports.getOneProduct = (req, res) => {
+    Product.findOne({ _id: req.params.id })
+       .then(product => res.json({ 
+        success: true,
+        message: "❎❎❎ Product fetched successfully ❎❎❎",
+        results: product }))
+        .catch(err => res.status(400).json({
+            success: false,
+            message : "❌❌❌Error fetching products❌❌❌"
+        }));
+}
+
+
+
+
+
+
+
+//!create a new product
 module.exports.createProduct = (req, res) => {
     Product.create(req.body)
         .then(newProduct => {
