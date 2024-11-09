@@ -1,0 +1,26 @@
+form {
+	margin : 25px auto;
+	display: table;
+	border: 2px solid grey;
+	width :300px;
+	padding : 20px;
+}
+
+input,label {
+	display : block;
+	margin-bottom : 5px;
+	
+}
+
+h3{
+	margin: 25px auto;
+	display:table;
+	background-color:blue;
+	color:#FFF;
+	border: 5px solid #000;
+	width:300px;
+	padding:25px;
+}
+.center{
+	text-align:center;
+}

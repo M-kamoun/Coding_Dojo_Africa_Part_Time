@@ -62,8 +62,28 @@ public class CafeJava {
 System.out.println("****************************************************************");
 System.out.println(displayTotalMessage + (lattePrice-dripCoffeePrice) );
 
+int number = 185;
+int units = number % 10; // Units place
+int tens = (number / 10) % 10; // Tens place
+int hundreds = number / 100; // Hundreds place
+int sum = hundreds + tens + units;
+
+boolean divisibleBy3 = sum % 3 == 0;
+if(divisibleBy3) {
+    System.out.println("is divisible by 3 and need : "+ number/3 +" tables");
+}else {
+    System.out.println("is not divisible by 3 ");
+}
+
+
 
     }
+
+   
+
+    
+
+  
 }
 
 
